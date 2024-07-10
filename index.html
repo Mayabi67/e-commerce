@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DELAMA Compression Socks</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">DELAMA.</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <input type="text" placeholder="Search...">
+    </header>
+
+    <section class="hero">
+        <h1>Comfort and Style</h1>
+        <h1>for Every Step</h1>
+        <button onclick="shopNow()">Shop Now</button>
+        <button onclick="learnMore()">Learn More</button>
+    </section>
+
+    <section class="features">
+        <h2>Why Choose DELAMA Compression Socks?</h2>
+        <ul>
+            <li>Improve blood circulation</li>
+            <li>Reduce swelling and fatigue</li>
+            <li>Comfortable and breathable material</li>
+            <li>Stylish patterns for everyday wear</li>
+            <li>Easy to wear with zipper options</li>
+            <li>Suitable for various activities and conditions</li>
+        </ul>
+    </section>
+
+    <section class="products">
+        <h2>Our Products</h2>
+        <div class="slider-container">
+            <button class="prev" onclick="slide(-1)">&#10094;</button>
+            <div class="slider">
+                <div class="slider-track">
+                    <div class="product-item">
+                        <img src="images/Black Blue Heals.jpeg" alt="Black Blue Heels">
+                        <h3>Compression Sock 1</h3>
+                        <p>Ksh 1,200</p>
+                        <button onclick="addToCart('Compression Sock 1', 1200, 'images/Black Blue Heals.jpeg')">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="images/Black Blue Stripes.jpeg" alt="Black Blue Stripes">
+                        <h3>Compression Sock 2</h3>
+                        <p>Ksh 1,200</p>
+                        <button onclick="addToCart('Compression Sock 2', 1200, 'images/Black Blue Stripes.jpeg')">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="images/Black with HeartBeat.jpeg" alt="Black with HeartBeat">
+                        <h3>Compression Sock 3</h3>
+                        <p>Ksh 1,200</p>
+                        <button onclick="addToCart('Compression Sock 3', 1200, 'images/Black with HeartBeat.jpeg')">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="images/Blue with Yellow Stripes.jpeg" alt="Blue with Yellow Stripes">
+                        <h3>Compression Sock 4</h3>
+                        <p>Ksh 1,200</p>
+                        <button onclick="addToCart('Compression Sock 4', 1200, 'images/Blue with Yellow Stripes.jpeg')">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="images/Luminous Stripes.jpeg" alt="Luminous Stripes">
+                        <h3>Compression Sock 5</h3>
+                        <p>Ksh 1,200</p>
+                        <button onclick="addToCart('Compression Sock 5', 1200, 'images/Luminous Stripes.jpeg')">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="images/Navy_Blue with Polka Dots.jpeg" alt="Navy Blue with Polka Dots">
+                        <h3>Compression Sock 6</h3>
+                        <p>Ksh 1,200</p>
+                        <button onclick="addToCart('Compression Sock 6', 1200, 'images/Navy_Blue with Polka Dots.jpeg')">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="images/Open Toe with Brown Heal.jpeg" alt="Open Toe with Brown Heal">
+                        <h3>Compression Sock 7</h3>
+                        <p>Ksh 1,200</p>
+                        <button onclick="addToCart('Compression Sock 7', 1200, 'images/Open Toe with Brown Heal.jpeg')">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="images/White Black Stripes.jpeg" alt="White Black Stripes">
+                        <h3>Compression Sock 8</h3>
+                        <p>Ksh 1,200</p>
+                        <button onclick="addToCart('Compression Sock 8', 1200, 'images/White Black Stripes.jpeg')">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="images/White_BlueDots.jpeg" alt="White Blue Dots">
+                        <h3>Compression Sock 9</h3>
+                        <p>Ksh 1,200</p>
+                        <button onclick="addToCart('Compression Sock 9', 1200, 'images/White_BlueDots.jpeg')">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="images/Black with Purple Stripes.jpg" alt="Black with Purple Stripes">
+                        <h3>Compression Sock 10</h3>
+                        <p>Ksh 1,200</p>
+                        <button onclick="addToCart('Compression Sock 10', 1200, 'images/Black with Purple Stripes.jpg')">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="images/Black with Zipper.jpg" alt="Open Toe Black with Zipper">
+                        <h3>Compression Sock 11</h3>
+                        <p>Ksh 1,200</p>
+                        <button onclick="addToCart('Compression Sock 11', 1200, 'images/Black with Zipper.jpg')">Add to Cart</button>
+                    </div>
+                    <div class="product-item">
+                        <img src="images/White Blue Pink Checked.jpg" alt="White Blue Pink Checked">
+                        <h3>Compression Sock 12</h3>
+                        <p>Ksh 1,200</p>
+                        <button onclick="addToCart('Compression Sock 12', 1200, 'images/White Blue Pink Checked.jpg')">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <button class="next" onclick="slide(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <section class="cart">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <div class="cart-total">
+            <p>Total: Ksh <span id="cart-total">0</span></p>
+            <button onclick="checkout()">Proceed to Checkout</button>
+        </div>
+        
+    </section>
+
+    <!-- Checkout Section -->
+    <section class="checkout">
+        <h2>Checkout</h2>
+        <form id="checkout-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="zip">Street:</label>
+            <input type="text" id="street" name="street" required>
+
+            <button type="button" onclick="payWithMpesa()">Pay with M-Pesa</button>
+        </form>
+    </section>
+
+    <section class="testimonials">
+        <h2>Customer Reviews</h2>
+        <div class="testimonial-list">
+            <div class="testimonial-item">
+                <p>"As a factory worker on my feet all day, these socks provide the support I need and keep my legs from swelling."</p>
+                <p>- Mayabi Mathias</p>
+            </div>
+            <div class="testimonial-item">
+                <p>"I've tried many brands, but these are by far the most comfortable and effective compression socks I've worn."</p>
+                <p>- Cheptoo Chemarum</p>
+            </div>
+            <div class="testimonial-item">
+                <p>"The zipper makes them so easy to put on and take off. Great for my daily runs."</p>
+                <p>- Karewa Omondi</p>
+            </div>
+            <div class="testimonial-item">
+                <p>"These socks are amazing! They really help with my circulation."</p>
+                <p>- Wasike Evans</p>
+            </div><div class="testimonial-item">
+                <p>"DELAMA Compression Socks have been a lifesaver for my tired legs. Highly recommended!"</p>
+                <p>- Trizah Mbugua</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog">
+        <h2>Latest Blog Posts</h2>
+        <div class="slider-container">
+            <button class="prev" onclick="slide(-1, 'blog')">&#10094;</button>
+            <div class="slider">
+                <div class="slider-track" id="blog-slider-track">
+                    <div class="blog-item">
+                        <h3>Benefits of Compression Socks</h3>
+                        <p>Learn about how compression socks can improve your health...</p>
+                    </div>
+                    <div class="blog-item">
+                        <h3>How Compression Socks Improve Athletic Performance</h3>
+                        <p>Learn how athletes benefit from wearing compression socks during training and competition...</p>
+                    </div>
+                    <div class="blog-item">
+                        <h3>The Science Behind Compression Therapy</h3>
+                        <p>Understand the medical science that supports the use of compression socks for various conditions...</p>
+                    </div>
+                    <div class="blog-item">
+                        <h3>Travel Tips: Keeping Your Legs Healthy on Long Flights</h3>
+                        <p>Discover how compression socks can prevent leg discomfort and swelling during long trips...</p>
+                    </div>
+                    <div class="blog-item">
+                        <h3>Compression Socks for Pregnancy: Benefits and Tips</h3>
+                        <p>Explore the advantages of wearing compression socks during pregnancy to alleviate leg swelling and discomfort...</p>
+                    </div>
+                    <div class="blog-item">
+                        <h3>Choosing the Right Compression Level for Your Needs</h3>
+                        <p>A guide to selecting the appropriate compression level for different activities and health concerns...</p>
+                    </div>
+                    <div class="blog-item">
+                        <h3>Fashion Meets Function: Stylish Compression Socks for Everyday Wear</h3>
+                        <p>Discover the latest trends in compression sock designs that combine fashion and function...</p>
+                    </div>
+                    <div class="blog-item">
+                        <h3>How Compression Socks Can Help with Varicose Veins</h3>
+                        <p>An in-depth look at how compression socks can alleviate symptoms and prevent the progression of varicose veins...</p>
+                    </div>
+                </div>
+            </div>
+            <button class="next" onclick="slide(1, 'blog')">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- <section class="blog">
+        <h2>Latest Blog Posts</h2>
+        <div class="blog-list">
+            <div class="blog-item">
+                <h3>Benefits of Compression Socks</h3>
+                <p>Learn about how compression socks can improve your health...</p>
+            </div>
+            
+        </div>
+    </section> -->
+
+    <section class="faqs">
+        <h2>Frequently Asked Questions</h2>
+        <div class="slider-container">
+            <button class="prev" onclick="slide(-1, 'faq')">&#10094;</button>
+            <div class="slider">
+                <div class="slider-track" id="faq-slider-track">
+                    <div class="faq-item">
+                        <h3>What are the benefits of compression socks?</h3>
+                        <p>Compression socks help improve blood circulation, reduce swelling...</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Who Should Wear Compression Socks?</h3>
+                        <p>Discover which groups of people benefit most from wearing compression socks, such as athletes, travelers, and individuals with certain medical conditions....</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Are Compression Socks Comfortable to Wear All Day?</h3>
+                        <p>Understand the comfort level of compression socks and tips for wearing them throughout the day...</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What Compression Level Should I Choose?</h3>
+                        <p>A guide to selecting the right compression level based on your needs, activities, and health conditions...</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Do Compression Socks Help with Recovery After Exercise?</h3>
+                        <p>Explore how compression socks aid in muscle recovery and reduce soreness after physical activity...</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Who Should Wear Compression Socks?</h3>
+                        <p>Discover which groups of people benefit most from wearing compression socks, such as athletes, travelers, and individuals with certain medical conditions....</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Are Compression Socks Comfortable to Wear All Day?</h3>
+                        <p>Understand the comfort level of compression socks and tips for wearing them throughout the day...</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What Compression Level Should I Choose?</h3>
+                        <p>A guide to selecting the right compression level based on your needs, activities, and health conditions...</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Do Compression Socks Help with Recovery After Exercise?</h3>
+                        <p>Explore how compression socks aid in muscle recovery and reduce soreness after physical activity...</p>
+                    </div>
+                </div>
+            </div>
+            <button class="next" onclick="slide(1, 'faq')">&#10095;</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 DELAMA Compression Socks. All rights reserved.</p>
+            <p>Payment method: Lipa na M-Pesa</p>
+            <p>Shipping: Ksh 300 within Nairobi, Ksh 500 outside Nairobi</p>
+        </div>
+    </footer>
+</body>
+</html>
