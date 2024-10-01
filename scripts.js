@@ -99,3 +99,40 @@ function slide(direction, type = 'product') {
     const transformValue = -(slideIndex * containerWidth);
     sliderTrack.style.transform = `translateX(${transformValue}px)`;
 }
+
+
+// Array of background images
+const backgrounds = [
+    "images/banner3.jpg",
+    "images/banner2.webp",
+    "images/banner6.jpg",
+    "images/banner1.jpg",
+    "images/banner4.webp",
+    "images/banner5.jpg"
+];
+
+// Get the hero element
+const heroElement = document.querySelector('.hero');
+
+// Initialize a variable to track the current background index
+let currentIndex = 0;
+
+// Function to change the background image
+function changeBackground() {
+    // Update the background image of the hero element
+    heroElement.style.background = `url('${backgrounds[currentIndex]}') no-repeat center center/cover`;
+
+    // Increment the index
+    currentIndex++;
+
+    // Reset the index if it exceeds the array length
+    if (currentIndex >= backgrounds.length) {
+        currentIndex = 0;
+    }
+}
+
+// Call the function every 3 seconds (3000 milliseconds)
+setInterval(changeBackground, 3000);
+
+// Call the function initially to set the first background
+changeBackground();
