@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(120deg, #f6d365, #fda085);
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* header {
+    background: rgba(0,0,0,0.5);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 28px;
+  } */
+  
+  header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header input[type="text"] {
+    padding: 5px;
+}
+  main {
+    width: 80%;
+    margin: 40px auto;
+    background: rgba(255,255,255,0.8);
+    padding: 30px;
+    border-radius: 12px;
+  }
+  
+  .instructions p {
+    padding: 10px 0;
+    font-size: 18px;
+  }
+  
+  .video-section {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .video-container iframe {
+    width: 80%;
+    height: 400px;
+    border-radius: 12px;
+    border: none;
+  }
+  .video-container iframe {
+  width: 80%;
+  height: 400px;
+  border-radius: 12px;
+  border: none;
+}
+.instructions img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  transition: transform 0.2s ease;
+}
+
+.instructions img:hover {
+  transform: scale(1.05);
+}
+
+  
