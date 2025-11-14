@@ -22,3 +22,21 @@ videoContainer.innerHTML = `
     Your browser does not support the video tag.
   </video>
 `;
+
+let sliderIndex = 0;
+
+function autoSlide() {
+    const sliderTrack = document.querySelector('.slider-track');
+    const itemWidth = sliderTrack.children[0].clientWidth;
+    const totalItems = sliderTrack.children.length;
+
+    sliderIndex++;
+
+    if (sliderIndex >= totalItems) {
+        sliderIndex = 0;
+    }
+    
+    sliderTrack.style.transform = `translateX(-${itemWidth * sliderIndex}px)`;
+}
+
+setInterval(autoSlide, 3000); // scroll every 3 seconds

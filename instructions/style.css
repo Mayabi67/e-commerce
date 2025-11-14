@@ -86,4 +86,128 @@ header input[type="text"] {
   transform: scale(1.05);
 }
 
-  
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+/* .slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.9s ease;
+}
+
+.product-item, .blog-item, .faq-item {
+    min-width: 200px;
+    margin: 0 10px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+.product-item img {
+    max-width: 100%;
+    height: 50%;
+}
+
+.product-item, .testimonial-item, .blog-item, .faq-item {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 200px;
+    box-sizing: border-box;
+} */
+
+.products {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider {
+    overflow: hidden;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.4s ease;
+}
+
+.product-item {
+    min-width: calc(100% / 3);
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.product-item img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.product-item h3 {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.price {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.add-btn {
+    margin-top: 6px;
+    padding: 8px 14px;
+    background:#ff6600;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.add-btn:hover {
+    opacity:.9;
+}
+
+/* responsive — on very small screens show 2 items */
+@media (max-width: 480px) {
+    .product-item {
+        min-width: 50%;
+    }
+}
