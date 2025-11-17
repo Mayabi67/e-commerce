@@ -1,5 +1,5 @@
 function shopNow() {
-    window.location.href = '#';
+    window.location.href = 'shop.html';
 }
 
 function learnMore() {

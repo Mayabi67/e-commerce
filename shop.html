@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>Shop - DELAMA Compression Socks</title>
+    <link rel="stylesheet" href="shop-styles.css">
+    <script src="shop-script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">DELAMA.</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="Why/why.html">Why</a></li>
+                <li><a href="instructions/index.html">Instructions</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <input type="text" placeholder="Search..." id="search-input">
+            <button class="cart-icon" onclick="toggleCart()">
+                🛒 <span id="cart-count">0</span>
+            </button>
+        </div>
+    </header>
+
+    <section class="shop-hero">
+        <h1>Our Compression Socks Collection</h1>
+        <p>Premium quality compression socks for every need</p>
+    </section>
+
+    <section class="products">
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="images/black blue heals.jpeg" alt="Black Blue Heels">
+                <h3>Black Blue Heels</h3>
+                <p class="price">Ksh 1,200</p>
+                <button onclick="addToCart('Black Blue Heels', 1200, 'images/black blue heals.jpeg')">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="images/black blue stripes.jpeg" alt="Black Blue Stripes">
+                <h3>Black Blue Stripes</h3>
+                <p class="price">Ksh 1,200</p>
+                <button onclick="addToCart('Black Blue Stripes', 1200, 'images/black blue stripes.jpeg')">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="images/black with heartbeat.jpeg" alt="Black with HeartBeat">
+                <h3>Black with HeartBeat</h3>
+                <p class="price">Ksh 1,200</p>
+                <button onclick="addToCart('Black with HeartBeat', 1200, 'images/black with heartbeat.jpeg')">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="images/blue with yellow stripes.jpeg" alt="Blue with Yellow Stripes">
+                <h3>Blue with Yellow Stripes</h3>
+                <p class="price">Ksh 1,200</p>
+                <button onclick="addToCart('Blue with Yellow Stripes', 1200, 'images/blue with yellow stripes.jpeg')">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="images/luminous stripes.jpeg" alt="Luminous Stripes">
+                <h3>Luminous Stripes</h3>
+                <p class="price">Ksh 1,200</p>
+                <button onclick="addToCart('Luminous Stripes', 1200, 'images/luminous stripes.jpeg')">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="images/navy_blue with polka dots.jpeg" alt="Navy Blue with Polka Dots">
+                <h3>Navy Blue with Polka Dots</h3>
+                <p class="price">Ksh 1,200</p>
+                <button onclick="addToCart('Navy Blue with Polka Dots', 1200, 'images/navy_blue with polka dots.jpeg')">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="images/open toe with brown heal.jpeg" alt="Open Toe with Brown Heel">
+                <h3>Open Toe with Brown Heel</h3>
+                <p class="price">Ksh 1,200</p>
+                <button onclick="addToCart('Open Toe with Brown Heel', 1200, 'images/open toe with brown heal.jpeg')">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="images/white black stripes.jpeg" alt="White Black Stripes">
+                <h3>White Black Stripes</h3>
+                <p class="price">Ksh 1,200</p>
+                <button onclick="addToCart('White Black Stripes', 1200, 'images/white black stripes.jpeg')">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="images/white_bluedots.jpeg" alt="White Blue Dots">
+                <h3>White Blue Dots</h3>
+                <p class="price">Ksh 1,200</p>
+                <button onclick="addToCart('White Blue Dots', 1200, 'images/white_bluedots.jpeg')">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="images/black with purple stripes.jpg" alt="Black with Purple Stripes">
+                <h3>Black with Purple Stripes</h3>
+                <p class="price">Ksh 1,200</p>
+                <button onclick="addToCart('Black with Purple Stripes', 1200, 'images/black with purple stripes.jpg')">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="images/black with zipper.jpg" alt="Black with Zipper">
+                <h3>Black with Zipper</h3>
+                <p class="price">Ksh 1,200</p>
+                <button onclick="addToCart('Black with Zipper', 1200, 'images/black with zipper.jpg')">Add to Cart</button>
+            </div>
+            
+            <div class="product-card">
+                <img src="images/white blue pink checked.jpg" alt="White Blue Pink Checked">
+                <h3>White Blue Pink Checked</h3>
+                <p class="price">Ksh 1,200</p>
+                <button onclick="addToCart('White Blue Pink Checked', 1200, 'images/white blue pink checked.jpg')">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart" onclick="toggleCart()">✕</button>
+        </div>
+        <div id="cart-items" class="cart-items"></div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <p>Total: <span id="cart-total">Ksh 0</span></p>
+            </div>
+            <button class="checkout-btn" onclick="proceedToCheckout()">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="checkout-modal" id="checkout-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Checkout</h2>
+                <button class="close-modal" onclick="closeCheckout()">✕</button>
+            </div>
+            <form id="checkout-form">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">M-Pesa Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" placeholder="254712345678" required pattern="254[0-9]{9}">
+                    <small>Format: 254XXXXXXXXX</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Delivery Location (Optional)</label>
+                    <input type="text" id="location" name="location" placeholder="e.g., Nairobi, Westlands">
+                </div>
+
+                <div class="order-summary">
+                    <h3>Order Summary</h3>
+                    <div id="checkout-items"></div>
+                    <div class="summary-total">
+                        <p>Subtotal: <span id="subtotal">Ksh 0</span></p>
+                        <p>Delivery: <span id="delivery-fee">Ksh 300</span></p>
+                        <p class="total-amount">Total: <span id="final-total">Ksh 300</span></p>
+                    </div>
+                </div>
+
+                <button type="button" class="mpesa-btn" onclick="payWithMpesa()">
+                    <span>Pay with M-Pesa</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loading-overlay">
+        <div class="spinner"></div>
+        <p>Processing payment...</p>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 DELAMA Compression Socks. All rights reserved.</p>
+            <p>Payment method: Lipa na M-Pesa</p>
+            <p>Shipping: Ksh 300 within Nairobi, Ksh 500 outside Nairobi</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -25,6 +25,25 @@ videoContainer.innerHTML = `
 
 let sliderIndex = 0;
 
+function slide(direction) {
+    const sliderTrack = document.querySelector('.slider-track');
+    const items = sliderTrack.children;
+    const itemWidth = items[0].offsetWidth;
+    const containerWidth = sliderTrack.parentElement.offsetWidth;
+    const totalItems = items.length;
+    const totalWidth = itemWidth * totalItems;
+    const maxSlide = Math.ceil(totalWidth / containerWidth) - 1;
+
+    if (direction === -1 && sliderIndex > 0) {
+        sliderIndex--;
+    } else if (direction === 1 && sliderIndex < maxSlide) {
+        sliderIndex++;
+    }
+
+    const transformValue = -(sliderIndex * containerWidth);
+    sliderTrack.style.transform = `translateX(${transformValue}px)`;
+}
+
 function autoSlide() {
     const sliderTrack = document.querySelector('.slider-track');
     const itemWidth = sliderTrack.children[0].clientWidth;

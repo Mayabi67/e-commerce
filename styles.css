@@ -207,3 +207,164 @@ footer {
 .next {
     right: 0;
 }
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .logo {
+        font-size: 1.3em;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 5px 8px;
+    }
+
+    nav ul li a {
+        font-size: 0.9em;
+    }
+
+    header input[type="text"] {
+        width: 90%;
+        margin-top: 10px;
+    }
+
+    .hero {
+        padding: 60px 15px;
+    }
+
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    .hero button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    .features, .products, .testimonials, .blog, .faqs {
+        padding: 15px;
+    }
+
+    .features h2, .products h2, .testimonials h2, .blog h2, .faqs h2 {
+        font-size: 1.5em;
+    }
+
+    .product-item, .testimonial-item, .blog-item, .faq-item {
+        width: 150px;
+        min-width: 150px;
+        margin: 0 8px;
+        padding: 15px;
+    }
+
+    .product-item img {
+        height: 150px;
+        object-fit: cover;
+    }
+
+    .product-item h3 {
+        font-size: 0.9em;
+    }
+
+    .product-item p {
+        font-size: 0.85em;
+    }
+
+    .product-item button {
+        padding: 8px;
+        font-size: 0.85em;
+    }
+
+    .cart {
+        padding: 15px;
+    }
+
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart-item img {
+        width: 100%;
+        height: auto;
+        max-width: 150px;
+    }
+
+    .checkout {
+        padding: 15px;
+    }
+
+    .checkout input {
+        font-size: 0.9em;
+    }
+
+    .slider-container {
+        margin: 0 -10px;
+    }
+
+    .prev, .next {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 15px 10px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.1em;
+    }
+
+    nav ul li {
+        margin: 3px 5px;
+    }
+
+    nav ul li a {
+        font-size: 0.8em;
+    }
+
+    .hero h1 {
+        font-size: 1.5em;
+    }
+
+    .hero button {
+        padding: 6px 12px;
+        font-size: 0.8em;
+    }
+
+    .features h2, .products h2, .testimonials h2, .blog h2, .faqs h2 {
+        font-size: 1.3em;
+    }
+
+    .product-item, .testimonial-item, .blog-item, .faq-item {
+        width: 130px;
+        min-width: 130px;
+        padding: 10px;
+    }
+
+    .product-item img {
+        height: 130px;
+    }
+
+    .testimonial-item {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .blog-item, .faq-item {
+        width: 90%;
+        min-width: 90%;
+    }
+}
